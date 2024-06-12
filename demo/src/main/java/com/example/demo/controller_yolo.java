@@ -44,12 +44,14 @@ public class controller_yolo {
 
             if (exitCode == 0) {
                 System.out.println("内爆识别任务执行成功！");
+                return "run successfully";
             } else {
                 System.out.println("内爆识别任务执行失败！");
+                return "run unsuccessfully";
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
+            return "run unsuccessfully";
         }
-        return "runsuccessfully";
     }
 }

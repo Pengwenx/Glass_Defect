@@ -33,7 +33,7 @@ export function Beginyolo(){
         method: 'GET',
         url: '/yolo',  // 与后端接口对应！！！
     }).then(function (response) {  // then 表示成功接收到响应后的操作
-        if (response.data === "runsuccessfully") {
+        if (response.data === "run successfully") {
             Message.success("识别成功");
             store.state.process_status = !store.state.process_status;
             console.log(response.data); // 检查返回的数据
